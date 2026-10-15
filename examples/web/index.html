@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend-monitor Web 示例</title>
+    <style>
+      body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; margin: 0; background: #f4f6fb; color: #1b2436; }
+      .wrap { max-width: 760px; margin: 40px auto; background: #fff; border: 1px solid #e3e8f1; border-radius: 8px; padding: 28px; }
+      h1 { margin-top: 0; }
+      .row { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+      button { border: 1px solid #2563eb; background: #2563eb; color: #fff; border-radius: 8px; padding: 8px 14px; cursor: pointer; }
+      button.secondary { background: #fff; color: #1b2436; border-color: #e3e8f1; }
+      pre { background: #f8fafc; border: 1px solid #e3e8f1; border-radius: 6px; padding: 12px; overflow: auto; }
+      .muted { color: #66738b; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Web SDK 接入示例</h1>
+      <p class="muted">打开控制台并依次点击按钮，即可在 dashboard 的错误明细、Issue 与埋点分析中看到数据。页面还会自动采集点击、请求与 Web Vitals。</p>
+      <div class="row">
+        <button id="js-error">触发 JS 错误</button>
+        <button id="promise-reject">触发 Promise 拒绝</button>
+        <button id="resource-error">触发资源加载失败</button>
+        <button id="http-error">触发 HTTP 错误</button>
+      </div>
+      <div class="row">
+        <button id="track-pay">上报 pay_click 埋点</button>
+        <button id="track-page">上报 page_view 埋点</button>
+        <button id="track-duration">上报时长埋点</button>
+      </div>
+      <h3>上报数据结构</h3>
+      <pre id="output">等待事件...</pre>
+      <script src="../../packages/web/dist/index.global.js"></script>
+      <script src="./demo.js"></script>
+    </div>
+  </body>
+</html>

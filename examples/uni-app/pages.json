@@ -1,0 +1,16 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "监控示例"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "frontend-monitor",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f4f6fb"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@frontend-monitor/example-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Web SDK 接入示例"
+}

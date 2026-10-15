@@ -1,0 +1,18 @@
+{
+  "name": "frontend-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "前端监控系统：web / uni-app 埋点 SDK + Node 数据清洗服务 + 可视化 dashboard",
+  "scripts": {
+    "build": "pnpm -r --if-present run build",
+    "test": "pnpm -r --if-present run test",
+    "typecheck": "pnpm -r --if-present run typecheck",
+    "dev:server": "pnpm --filter @frontend-monitor/server dev",
+    "dev:dashboard": "pnpm --filter @frontend-monitor/dashboard dev",
+    "seed": "pnpm --filter @frontend-monitor/server seed"
+  },
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": ">=22"
+  }
+}

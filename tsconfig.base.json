@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@frontend-monitor/shared": ["packages/shared/src/index.ts"],
+      "@frontend-monitor/types": ["packages/types/src/index.ts"],
+      "@frontend-monitor/utils": ["packages/utils/src/index.ts"],
+      "@frontend-monitor/core": ["packages/core/src/index.ts"],
+      "@frontend-monitor/web": ["packages/web/src/index.ts"],
+      "@frontend-monitor/uni-app": ["packages/uni-app/src/index.ts"]
+    }
+  }
+}

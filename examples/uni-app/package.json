@@ -1,0 +1,9 @@
+{
+  "name": "@frontend-monitor/example-uni-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "uni-app SDK 接入示例",
+  "dependencies": {
+    "@frontend-monitor/uni-app": "workspace:*"
+  }
+}

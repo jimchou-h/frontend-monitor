@@ -1,0 +1,12 @@
+packages:
+  - "packages/*"
+  - "server"
+  - "dashboard"
+  - "examples/*"
+
+onlyBuiltDependencies:
+  - esbuild
+
+verifyDepsBeforeRun: false
+allowBuilds:
+  esbuild: set this to true or false
